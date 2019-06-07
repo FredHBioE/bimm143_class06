@@ -1,0 +1,42 @@
+---
+title: 'BIMM 143 Lecture 6: R functions'
+author: "Fangchao He"
+date: "4/18/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## About
+This is my **class 6** R markdown document with my *code* and notes for the day.
+
+```{r}
+read.csv(file = "test1.txt", header = TRUE)
+```
+
+```{r}
+read.table(file = "test2.txt", header = TRUE, sep = "$")
+```
+
+```{r}
+read.table(file = "test3.txt", header = FALSE)
+```
+```{r}
+read.csv("https://bioboot.github.io/bimm143_S19/class-material/test1.txt", header = TRUE)
+```
+
+```{r}
+add <- function(x, y = 1) {
+  # The body!!
+  x + y
+}
+```
+
+```{r}
+add(10)
+```
+
+```{r}
+add(10, 10)
+```
